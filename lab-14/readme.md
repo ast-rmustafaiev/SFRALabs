@@ -6,6 +6,6 @@
 
     In your custom cartridge, create a Product.js file in the same location as the Product.js file in the base cartridge. Use the following code to import the functionality of Product.js and redefine it.
     
-![](assets/img/Screenshot_29.png)
+![](../assets/img/Screenshot_29.png)
 
 [**back to labs**](../README.md) 

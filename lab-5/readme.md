@@ -26,7 +26,7 @@
     ```
 3. Request the ShowProduct-Start controller appending a URL query string containing the product id: ShowProduct-Start?product=54399.
 4. Debug and verify.
-        ![](assets/img/Screenshot_27.png)
+        ![](../assets/img/Screenshot_27.png)
 5. Commit and Push to new branch, create Pull Request
 
 [**back to labs**](../README.md) | [next](../lab-6/readme.md)

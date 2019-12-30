@@ -41,15 +41,15 @@ module.exports = server.exports();
 
 1. Go to Debugger tab (Ctrl + Shift + D)
 
-    ![](assets/img/Screenshot_9.png)
+    ![](../assets/img/Screenshot_9.png)
 
 2. In the dropdown list at the top choose "Add configuration":
-    ![](assets/img/Screenshot_10.png)
+    ![](../assets/img/Screenshot_10.png)
 
 3. Right after launch.json should be automatically opened and a list of possible configurations shown. Choose "Demandware Debugger", check default values of launch.json - you should see something like at the screen below, and save the file:
 
-    ![](assets/img/Screenshot_11.png)
-    ![](assets/img/Screenshot_12.png)
+    ![](../assets/img/Screenshot_11.png)
+    ![](../assets/img/Screenshot_12.png)
 
 
 4. Now the debugger should be configured and ready to use.
@@ -58,14 +58,14 @@ module.exports = server.exports();
 **3. Start a Debugging Session**   
    1. On the Debugger tab in the dropdown list at the top choose your demandware configuration and start a debugging session (press the green arrow or F5). Debugger panel should appear at the top and a message about successful connection should be printed in the Debug Console at the bottom.
 
-        ![](assets/img/Screenshot_19.png)
+        ![](../assets/img/Screenshot_19.png)
 
    2. Open ShowProduct controller in VSC and add breakpoint on some of variables declaration lines. It should also appear in Breakpoints section in VSC.
-        ![](assets/img/lab3-prior-debug.png)
+        ![](../assets/img/lab3-prior-debug.png)
 
    3. In a browser call ShowProduct-Start endpoint with random product ID like 123456, the url should look like: "...dware.net/on/demandware.store/Sites-RefArch-Site/en_US/ShowProduct-Main?pid=4"
    4. After url entered debugger will catch the breakpoint, stop execution and show current variables:
-        ![](assets/img/lab3-debug.png)
+        ![](../assets/img/lab3-debug.png)
 
 
    5. Press F5 to continue execution. Since you have no templates created, execution should finish with an error (you can see it's details in Request Log).

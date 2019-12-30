@@ -27,12 +27,12 @@ One more good way to reuse existing code is to use decorators. Decorator is an I
 
 3. Finding a Decorator used on a page:
    1. In the Storefront Toolkit, locate the Page Information tool and select it.
-        ![](assets/img/Screenshot_23.png)
+        ![](../assets/img/Screenshot_23.png)
    2. Mouse over the page to see the templates used to render areas of the page. For example:
-        ![](assets/img/Screenshot_24.png)
+        ![](../assets/img/Screenshot_24.png)
    3. Click one of the links to navigate to a specific template, i.e. the decorator. Expected result: the decorator file opens in Studio.
    4. Back in the browser, select the Cache Information tool from the Storefront Toolkit.
-        ![](assets/img/Screenshot_25.png)
+        ![](../assets/img/Screenshot_25.png)
    5. Inspect the caching used for different templates in the page.
    6. Click on one of the links to open that file in Studio.
    7. Click the Esc key to exit the toolkit behavior.

@@ -1,7 +1,7 @@
 ## Lab-9: Models and js decorators
 
 Models are serializable JSON objects. A model takes the object as a parameter and construct itself by retrieving neccesery information from the object. The model applies bussiness logic while it's doing the convertion to represent information in a usable format. Some models are complicated, for example Product is the most complicated model in the SFRA. There are several varities of products such as Product, ProductBundle, ProductLineItem,  ProductSet etc. To make it easier for you to customize the features, that are available we use decorator patterns. A decorator pattern is a standart development approach when you have to decorate an object with the set of attributes and/or actions. Each attribute is a separate decorator and is applied to the object to add functionality. We use a decorator pattern for more complicated models to separate functionality and allow you to easily supstitude it for different functionality where needed. Different models such as Product, ProductBundle,  ProductSet share the same decorators, for example the productImages decorator is shared amongst Product, ProductBundle,  ProductSet models. If you need to change how the images are retrieved from the system, for example if you want to store images on an external server instead of using the bussiness manager you only have to change imagedecorator and all models that are also using it will have the new information.
-        ![](assets/img/Screenshot_28.png)
+        ![](../assets/img/Screenshot_28.png)
 
 To see how it works go to: */cartridge/models/product/decorators/index.js where are imporrted all decorator in the folder. Discover some of them, for example base.js decorator.
 

@@ -5,7 +5,7 @@ This walkthrough is about Page Level Caching, here you need to turn on general C
 1. Enable page caching for the *RefArch* site in *Business Manager*:
    1. Administration ⇒ Sites ⇒ Manage Sites ⇒ SiteGenesis ⇒ Cache (tab). 
    2. Check Enable page caching checkbox. Click Apply.
-    ![](assets/img/Screenshot_26.png)
+    ![](../assets/img/Screenshot_26.png)
 2. Create a new *Caching* controller.
    ```javascript
     'use strict';

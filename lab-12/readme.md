@@ -40,9 +40,9 @@ Show error messages if form is invalid as well as successfull message after subm
 a) simple mode - validate form (Client+Server side validation), show messages with details about entered data and finally thankful message for feedback.
 b) ask a friend (in this mode, please show UI like on the attached picture) - implement extended validation for all fields and show message that you comment (lastname+first name) has been redirected/posted/shared to your friend (friend's last+first names)
 
-![](assets/img/Screenshot_1.png)
+![](../assets/img/Screenshot_1.png)
 
-![](assets/img/Screenshot_2.png)
+![](../assets/img/Screenshot_2.png)
 
 **Sample**
 
@@ -109,7 +109,7 @@ See also [Using API Form Classes](https://documentation.b2c.commercecloud.salesf
 
 In this example, **customPage.isml** is the empty form rendered for the user and the **customPageresult.isml** shows data entered into the form.
 
-The client-side JavaScript and css files are included using the **assets.js** module.
+The client-side JavaScript and css files are included using the **../assets.js** module.
 
 The form action uses the **actionUrl** property passed to it by the controller.
 
@@ -152,7 +152,7 @@ The form action uses the **actionUrl** property passed to it by the controller.
 Update the **login.properties** file(Ctrl+P to find this file globaly).
 Add this line: **button.text.submit=Submit**
 
-![](assets/img/Screenshot_3.png)
+![](../assets/img/Screenshot_3.png)
 
 
 
