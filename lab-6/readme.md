@@ -12,12 +12,13 @@ In this lab we summarize all work done in 4 previous WTs. You need to find in BM
    1. In your IDE go into the debugging mode, start debugging session.
    2. Add some breakpoints in the ShowProduct-Start controller.
    3. Call the controller in a browser using proper query string.
+    ![](../assets/img/lab-6-debug.png)
    4. Step over all the code in the script (use F5 or F6).
    5. Execute through the end of the controller (F8).
-
+   6. Verify the result in the browser.
+   ![](../assets/img/lab-6-print.png)
 
 4. Call ShowProduct-Start on browser for some invalid product ID, verify if proper message appears.
-
 
 5. Commit and Push to new branch, create Pull Request
 

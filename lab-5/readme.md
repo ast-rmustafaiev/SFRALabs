@@ -20,14 +20,18 @@
     ```javascript
     <html>
         <head>
-            <title>${ Resource.msg('product.notfound', 'Product not found') }</title>
+            <title>${ Resource.msg('product.show', 'Show Product') }</title>
         </head>
         <body>
             <h1>
-                <isprint value="${pdict.Message}"/>
+                <isprint value="${pdict.Product.name}"/>
             </h1>
+            <p>
+                <isprint value="${pdict.Product.shortDescription}"/>
+            </p>
         </body>
     </html>
+
     ```
 3. Request the ShowProduct-Start controller appending a URL query string containing the product id:
    http://your-sandbox-name-dw.demandware.net/on/demandware.store/Sites-RefArch-Site/en_US/ShowProduct-Start?pid=337799 (replace "your-sandbox-name" with a proper domain name of your sandbox).

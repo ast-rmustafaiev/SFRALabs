@@ -63,7 +63,7 @@ module.exports = server.exports();
    2. Open ShowProduct controller in VSC and add breakpoint on some of variables declaration lines. It should also appear in Breakpoints section in VSC.
         ![](../assets/img/lab3-prior-debug.png)
 
-   3. In a browser call ShowProduct-Start endpoint with random product ID like 123456, the url should look like: "...dware.net/on/demandware.store/Sites-RefArch-Site/en_US/ShowProduct-Start?pid=4"
+   3. In a browser call ShowProduct-Start endpoint with random product ID like 123456, the url should look like: "...dware.net/on/demandware.store/Sites-RefArch-Site/en_US/ShowProduct-Start?pid=1234"
    4. After url entered debugger will catch the breakpoint, stop execution and show current variables:
         ![](../assets/img/lab3-debug.png)
 
