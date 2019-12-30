@@ -4,12 +4,15 @@
       ```javascript
     <html>
         <head>
-            <title>${ Resource.msg('Hello') }</title>
+            <title>${ Resource.msg('product.show', 'Show Product') }</title>
         </head>
         <body>
-            <h1>${JSON.stringify(pdict.Product)}</h1>
+            <h1>
+                <isprint value="${JSON.stringify(pdict.Product)}"/>
+            </h1>
         </body>
     </html>
+
     ```
 
 2. Create ISML template lab4/productnotfound.isml with some simple text describing that the system can't find such product.
@@ -17,16 +20,25 @@
     ```javascript
     <html>
         <head>
-            <title>${ Resource.msg('Hello') }</title>
+            <title>${ Resource.msg('product.notfound', 'Product not found') }</title>
         </head>
         <body>
-            <h1>${pdict.Log}</h1>
+            <h1>
+                <isprint value="${pdict.Message}"/>
+            </h1>
         </body>
     </html>
     ```
-3. Request the ShowProduct-Start controller appending a URL query string containing the product id: ShowProduct-Start?product=54399.
+3. Request the ShowProduct-Start controller appending a URL query string containing the product id:
+   http://your-sandbox-name-dw.demandware.net/on/demandware.store/Sites-RefArch-Site/en_US/ShowProduct-Start?pid=337799 (replace "your-sandbox-name" with a proper domain name of your sandbox).
+
 4. Debug and verify.
-        ![](../assets/img/Screenshot_27.png)
+        ![](../assets/img/lab-5-debug.png)
+        
 5. Commit and Push to new branch, create Pull Request
+
+**Tips**
+Check the documentation for a [Resource](https://documentation.b2c.commercecloud.salesforce.com/DOC1/index.jsp?topic=%2Fcom.demandware.dochelp%2FDWAPI%2Fscriptapi%2Fhtml%2Fapi%2Fclass_dw_web_Resource.html&resultof=%22%52%65%73%6f%75%72%63%65%22%20%22%72%65%73%6f%75%72%63%22%20) class that had been used in the Lab.
+
 
 [**back to labs**](../README.md) | [next](../lab-6/readme.md)
