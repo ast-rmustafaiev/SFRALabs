@@ -7,7 +7,13 @@ This lab is about using debugger to debug controller execution. For this you nee
 **1. Get a Product using a Controller.**
    1. Save the *Hello* controller as *ShowProduct*.
 
-   2. Use  *getProduct* method of *ProductMgr* to get product by it's ID, use the code below as an example. Please pay attention, that the controller expects productID to be passed as an url parameter. You could also notice that the controller renders two templates, which you didn't do so far - skip this detail for now, it will be explained in the next walkthrough.
+   2. Use  *getProduct* method of *ProductMgr* to get product by it's ID, 
+   use the code below as an example. Please pay attention, that the controller expects
+   productID to be passed as an url parameter. 
+   Refer ```req.querystring``` as an object (key, value) mapping to URL query parameters.
+   You could also notice that the controller renders two templates, 
+   which you didn't do so far - skip this detail for now, 
+   it will be explained in the next walkthrough.
 
 ```javascript
 'use strict';
@@ -15,23 +21,19 @@ var server = require('server');
 var ProductMgr = require('dw/catalog/ProductMgr');
 
 server.get('Main', function (req, res, next) {
-  var params = req.httpHeaders;
+    var queryObj = req.querystring;
+    var productId = queryObj && queryObj['pid'];
+    var product = productId && ProductMgr.getProduct(productId);
 
-  if ('x-is-query_string' in params) {
-    productID = params.get('x-is-query_string').split('=')[1];
-  } else {
-    productID = null;
-  }
+    if (product) {
+        res.render('lab4/product', { Product: product });
+    } else {
+        res.render('lab4/productnotfound', { Message: 'the product was not found: ' + productId });
+    }
 
-  var product = ProductMgr.getProduct(productID);
-
-  if (product) {
-    res.render('productlab4/product', { Product: product });
-  } else {
-    res.render('productlab4/productnf', { Log: 'the product was not found: ' + productID });
-  }
-  next();
+    next();
 });
+
 module.exports = server.exports();
 ```
 
@@ -59,11 +61,11 @@ module.exports = server.exports();
         ![](assets/img/Screenshot_19.png)
 
    2. Open ShowProduct controller in VSC and add breakpoint on some of variables declaration lines. It should also appear in Breakpoints section in VSC.
-        ![](assets/img/Screenshot_18.png)
+        ![](assets/img/lab3-prior-debug.png)
 
-   3. In a browser call ShowProduct-Start endpoint with random product ID like 123456, the url should look like: "...dware.net/on/demandware.store/Sites-RefArch-Site/en_US/ShowProduct-Main?product=4"
+   3. In a browser call ShowProduct-Start endpoint with random product ID like 123456, the url should look like: "...dware.net/on/demandware.store/Sites-RefArch-Site/en_US/ShowProduct-Main?pid=4"
    4. After url entered debugger will catch the breakpoint, stop execution and show current variables:
-        ![](assets/img/Screenshot_20.png)
+        ![](assets/img/lab3-debug.png)
 
 
    5. Press F5 to continue execution. Since you have no templates created, execution should finish with an error (you can see it's details in Request Log).

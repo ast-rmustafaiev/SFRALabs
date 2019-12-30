@@ -61,10 +61,14 @@ After your environment is set up, you can run the SFRA reference application and
 
 
 ## Storefront Reference Architecture - SFRA
+Astound Commerce Demandware(Digital) Community (ACDC)
+Here you can find comprehensive documentation and guides, aw well as knowledge base.
 [Learn more](https://confluence.ontrq.com/display/ACDC/Storefront+Reference+Architecture+-+SFRA)
 
 ## Global Development Strategy for SFRA Projects - WIP
+The document is collection of best practices and become a main guide-strategy for roll-out projects under MobileFirst (Storefront Reference Application) provided by Salesforce
 
+Also this document intend to collect any found bugs and fixes/life-hacks for them
 [Learn more](https://confluence.ontrq.com/pages/viewpage.action?spaceKey=ACDC&title=Global+Development+Strategy+for+SFRA+Projects+-+WIP#GlobalDevelopmentStrategyforSFRAProjects-WIP-res)
 
 ## Developing with Commerce Cloud Storefront Reference Architecture
