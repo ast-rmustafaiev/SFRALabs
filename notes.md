@@ -5,6 +5,10 @@ Custom cartridge setup has not been provided
 (There is could be extra section for this, we can employ sgfm-scripts createCartridge
 command)
 
+Lab-1
+Lab-3
+Modified
+
 Lab-4
 There is an error in the product model, not sure whether 
 it my setup were wrong or an error in general ...
@@ -56,12 +60,12 @@ Caching is no longer should be present or handled by templates!
 The aim is to use controllers instead, as per layer which should control it
 
 Lab-12
-WIP
+No comments
 
 Lab-13
-WIP
+stream.getClick() cause debugger hanging
 
 Lab-14
-Incomplete lab, duplicates that has done Lab-8 **replace route**
+Incomplete lab, duplicates that has done in Lab-8 **replace route**
 
 
