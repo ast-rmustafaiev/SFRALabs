@@ -8,8 +8,11 @@
         </head>
         <body>
             <h1>
-                <isprint value="${JSON.stringify(pdict.Product)}"/>
+                <isprint value="${pdict.Product.name}"/>
             </h1>
+            <p>
+                <isprint value="${pdict.Product.shortDescription}"/>
+            </p>
         </body>
     </html>
 
@@ -20,15 +23,10 @@
     ```javascript
     <html>
         <head>
-            <title>${ Resource.msg('product.show', 'Show Product') }</title>
+            <title>Product not found!</title>
         </head>
         <body>
-            <h1>
-                <isprint value="${pdict.Product.name}"/>
-            </h1>
-            <p>
-                <isprint value="${pdict.Product.shortDescription}"/>
-            </p>
+            Not found: ${pdict.Log}
         </body>
     </html>
 
