@@ -21,8 +21,9 @@ res.setViewData: Updates the viewData object used for rendering the template. Cr
 'use strict';
 
 var server = require('server');
-var page = module.superModule;        //inherits functionality from next Product.js found to the right on the cartridge path
-server.extend(page);                  //extends existing server object with a list of new routes from the Product.js found by module.superModule
+//inherits functionality from next Product.js found to the right on the cartridge path
+server.extend(module.superModule);         //inherits functionality from next Product.js found to the right on the cartridge path
+//extends existing server object with a list of new routes from the Product.js found by module.superModule
 
 server.append('Show', function (req, res, next) { //adds additional middleware
     var viewData = res.getViewData();
