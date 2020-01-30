@@ -1,9 +1,9 @@
 ## Lab-10: Creating Social Networks Links
 
  In this lab you need to create and add a social networks links to the product template.
+To extend template we need to create _\_ext_ cartridge folder
 
-
-- app_storefront_base/cartridge/templates/default/product/components/socialIcons.isml
+- app_storefront_base_ext/cartridge/templates/default/product/components/socialIcons.isml
 
 Add this code to the list in the file, go to the browser and check how it works
 
@@ -18,6 +18,8 @@ Add this code to the list in the file, go to the browser and check how it works
         <i class="fa fa-google"></i>
     </a>
 </li>
+
+Do not forget to update cartridge path!
  ```
 
 
